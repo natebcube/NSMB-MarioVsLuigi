@@ -518,6 +518,36 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: hudnumber_timer
     m_HashCode: 868715650
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 72
+    m_Scale: 1.5
+    m_Name: room_3ds
+    m_HashCode: 679223780
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 73
+    m_Scale: 1.5
+    m_Name: room_ds
+    m_HashCode: -1541226281
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 74
+    m_Scale: 1.5
+    m_Name: room_wii
+    m_HashCode: 679162711
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 75
+    m_Scale: 1.5
+    m_Name: room_wiiu
+    m_HashCode: 937532994
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 0.75
+    m_Name: room_smallnumber_1
+    m_HashCode: -657421294
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -1676,5 +1706,69 @@ MonoBehaviour:
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
     sprite: {fileID: 932749408, guid: 70672da71d9d71a4daaf5f3fc58531e6, type: 3}
+  - m_Index: 72
+    m_Metrics:
+      m_Width: 14
+      m_Height: 14
+      m_HorizontalBearingX: -2
+      m_HorizontalBearingY: 13
+      m_HorizontalAdvance: 7
+    m_GlyphRect:
+      m_X: 228
+      m_Y: 106
+      m_Width: 14
+      m_Height: 14
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -211752466, guid: 70672da71d9d71a4daaf5f3fc58531e6, type: 3}
+  - m_Index: 73
+    m_Metrics:
+      m_Width: 14
+      m_Height: 14
+      m_HorizontalBearingX: -2
+      m_HorizontalBearingY: 13
+      m_HorizontalAdvance: 7
+    m_GlyphRect:
+      m_X: 216
+      m_Y: 141
+      m_Width: 14
+      m_Height: 14
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 2091714225, guid: 70672da71d9d71a4daaf5f3fc58531e6, type: 3}
+  - m_Index: 74
+    m_Metrics:
+      m_Width: 14
+      m_Height: 14
+      m_HorizontalBearingX: -2
+      m_HorizontalBearingY: 13
+      m_HorizontalAdvance: 7
+    m_GlyphRect:
+      m_X: 204
+      m_Y: 242
+      m_Width: 14
+      m_Height: 14
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: 935158388, guid: 70672da71d9d71a4daaf5f3fc58531e6, type: 3}
+  - m_Index: 75
+    m_Metrics:
+      m_Width: 14
+      m_Height: 14
+      m_HorizontalBearingX: -2
+      m_HorizontalBearingY: 13
+      m_HorizontalAdvance: 7
+    m_GlyphRect:
+      m_X: 149
+      m_Y: 118
+      m_Width: 14
+      m_Height: 14
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -1441940556, guid: 70672da71d9d71a4daaf5f3fc58531e6, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []

@@ -92,12 +92,15 @@ namespace NSMB.Entities {
         [SerializeField] public bool collideWithOtherEnemies = true;
         [SerializeField] protected bool dieWhenInsideBlock = true;
         [SerializeField] protected bool flipSpriteRenderer = false;
+        [SerializeField] protected bool isKillable = true;
 
         //---Components
         [SerializeField] public BoxCollider2D hitbox;
         [SerializeField] protected Animator animator;
         [SerializeField] protected LegacyAnimateSpriteRenderer legacyAnimation;
         [SerializeField] public SpriteRenderer sRenderer;
+        [SerializeField] public Transform modelTransform;
+        [SerializeField] public GameObject model;
 
         public override void OnValidate() {
             base.OnValidate();
@@ -152,7 +155,7 @@ namespace NSMB.Entities {
                 body.Freeze = false;
 
                 if (WasSpecialKilled) {
-                    AngularVelocity = 400f * (FacingRight ? 1 : -1);
+                   AngularVelocity = 400f * (FacingRight ? 1 : -1);
                 }
                 return;
             } else {
@@ -217,16 +220,16 @@ namespace NSMB.Entities {
             if (IsDead) {
                 return;
             }
-
-            IsDead = true;
-            WasSpecialKilled = true;
+            if (isKillable == true) {
+                IsDead = true;
+                WasSpecialKilled = true;
+            }
             WasGroundpounded = groundpound;
             WasKilledByMega = mega;
             WasCrushed = false;
             ComboCounter = (byte) combo;
             FacingRight = right;
-
-            body.Velocity = new(2f * (FacingRight ? 1 : -1), 2.5f);
+            body.Velocity = new (2f * (FacingRight ? 1 : -1), 2.5f);
             AngularVelocity = 400f * (FacingRight ? 1 : -1);
             body.Gravity = Vector2.down * 14.75f;
 
@@ -246,7 +249,8 @@ namespace NSMB.Entities {
             IsActive = false;
             WasCrushed = true;
             ComboCounter = 0;
-            body.Velocity = new(2f * (FacingRight ? 1 : -1), 2.5f);
+            body.Velocity = new (2f * (FacingRight ? 1 : -1), 2.5f);
+
         }
 
         public virtual void OnIsDeadChanged() {
@@ -254,6 +258,10 @@ namespace NSMB.Entities {
                 // Death effects
                 if (animator) {
                     animator.enabled = false;
+                }
+
+                if (model) {
+                    model.SetActive(false);
                 }
 
                 sfx.enabled = true;
@@ -271,6 +279,9 @@ namespace NSMB.Entities {
                 // Undo death effects
                 if (animator) {
                     animator.enabled = true;
+                }
+                if (model) {
+                    model.SetActive(true);
                 }
             }
         }
@@ -298,6 +309,10 @@ namespace NSMB.Entities {
 
         public override void OnFacingRightChanged() {
             sRenderer.flipX = FacingRight ^ flipSpriteRenderer;
+            if(modelTransform != null) {
+                modelTransform.rotation = Quaternion.Euler(0, FacingRight ? 135 : -135, 0);
+            }
+
         }
 
         public override void RespawnEntity() {
@@ -346,7 +361,10 @@ namespace NSMB.Entities {
                     Kill();
                     player.DoEntityBounce = true;
                 } else {
-                    SpecialKill(player.body.Velocity.x > 0, player.IsGroundpounding, player.State == Enums.PowerupState.MegaMushroom, player.StarCombo++);
+                    if (isKillable == true) {
+                        SpecialKill(player.body.Velocity.x > 0, player.IsGroundpounding, player.State == Enums.PowerupState.MegaMushroom, player.StarCombo++);
+                    }
+                    
                 }
                 return;
             }
@@ -361,6 +379,7 @@ namespace NSMB.Entities {
                 } else {
                     Kill();
                     player.DoEntityBounce = !player.IsGroundpounding;
+                    
                 }
 
                 player.IsDrilling = false;
@@ -380,8 +399,9 @@ namespace NSMB.Entities {
             if (IsDead) {
                 return false;
             }
-
-            SpecialKill(fireball.FacingRight, false, false, 0);
+            if (isKillable == true){
+                SpecialKill(fireball.FacingRight, false, false, 0);
+            }
             return true;
         }
 

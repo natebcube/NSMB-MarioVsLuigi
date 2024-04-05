@@ -1666,7 +1666,7 @@ TextureImporter:
         width: 13
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1674,6 +1674,90 @@ TextureImporter:
       bones: []
       spriteID: 78a2c269121fcce488a5696f219616dc
       internalID: 932749408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_wii
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 242
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35321de07bbef043bb28fac0b27e542
+      internalID: 935158388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_ds
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 141
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc30f477ace7cf4983c0a79cfdadea8
+      internalID: 2091714225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_3ds
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 106
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bafe0f54b71a445bf85ac638a2a545
+      internalID: -211752466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room_wiiu
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 118
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a399ce65a1ec63342a9a4cdb6d151dca
+      internalID: -1441940556
       vertices: []
       indices: 
       edges: []
@@ -1724,8 +1808,10 @@ TextureImporter:
       hudnumber_star: 861810113
       hudnumber_x: -1713447182
       hudnumbers_timer: 932749408
+      room_3ds: -211752466
       room_coins: 1534273505
       room_customlevel: -971827560
+      room_ds: 2091714225
       room_host: -9005941153719796207
       room_lives: 1261997413
       room_powerups: 268930356
@@ -1745,6 +1831,8 @@ TextureImporter:
       room_stars: -846454927
       room_teams: 314515511
       room_timer: 309482482
+      room_wii: 935158388
+      room_wiiu: -1441940556
       room_win: 1471587138
       team_blue: 1551341904
       team_blue_alt: 286214285

@@ -1013,6 +1013,7 @@ namespace NSMB.Entities.Player {
 
             input.Set(newInput);
             onInputPreviousInputs = newInput;
+
         }
 
         private void CheckForPowerupActions(PlayerNetworkInput current, PlayerNetworkInput previous) {

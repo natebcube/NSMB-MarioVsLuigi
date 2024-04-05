@@ -1436,7 +1436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000038146973}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &47220569
@@ -36615,7 +36615,7 @@ MonoBehaviour:
   playerColorPaletteIcon: {fileID: 1087430716}
   playerColorDisabledIcon: {fileID: 1622845023}
   maps:
-  - translationKey: level.default.grass
+  - translationKey: <sprite name=room_ds> Grassland
     levelPreviewPosition: {fileID: 1477183160}
     buildIndex: 1
   - translationKey: level.default.bricks
@@ -46361,7 +46361,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 47220570}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.67424786
+  m_Size: 0.67412436
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -82270,7 +82270,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1141870934}
   m_HandleRect: {fileID: 1141870933}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

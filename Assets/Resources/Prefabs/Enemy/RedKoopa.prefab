@@ -66,6 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8836298984178612580, guid: 4f50cb5e806289d43bf820de1f1347bb,
         type: 3}
+      propertyPath: canKick
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836298984178612580, guid: 4f50cb5e806289d43bf820de1f1347bb,
+        type: 3}
       propertyPath: deadSprite
       value: 
       objectReference: {fileID: -4994753475893962757, guid: 60f25f7bee1a7f84c946884c48261f34,

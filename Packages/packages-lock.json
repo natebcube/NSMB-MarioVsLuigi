@@ -1,13 +1,12 @@
 {
   "dependencies": {
     "com.jimmycushnie.noisynodes": {
-      "version": "https://github.com/JimmyCushnie/Noisy-Nodes.git",
+      "version": "file:C:/Users/hazem/Downloads/Noisy-Nodes-master/Noisy-Nodes-master",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.shadergraph": "7.1.8"
-      },
-      "hash": "2dae176e2f55626785e1dbcedd20a8b4e208acf7"
+      }
     },
     "com.unity.2d.animation": {
       "version": "9.0.4",
@@ -69,16 +68,16 @@
       }
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "https://github.com/Unity-Technologies/2d-extras.git#master",
+      "version": "3.1.2",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {
         "com.unity.modules.tilemap": "1.0.0",
         "com.unity.2d.tilemap": "1.0.0",
         "com.unity.ugui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
-      "hash": "8de698ac55b7ed01ec95a43e714c6358505b8110"
+      "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
       "version": "1.8.11",
